@@ -1,0 +1,53 @@
+/* los selectores definen que elementos del html serán modificados */
+
+/* Selector universal: permite seleccionar a todos los elementos html 
+    Especificidad = 0*/
+/* * {
+    background-color: teal;
+    text-decoration: underline;
+    letter-spacing: 10px;
+} */
+
+/* Selector de tipo, nombre o etiqueta */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    color: steelblue;
+    font-size: 20px;
+}
+
+/* Selector de clase: selecciona elementos por el nombre dentro del atributo "class"  */
+
+.peliculas {
+    color: crimson;
+}
+
+.series {
+    font-size: 40px;
+}
+
+.favoritas {
+    font-weight: bold;
+    color: rebeccapurple;
+    /* font-size: 25px; */
+}
+
+.espaciado {
+    letter-spacing: 10px;
+}
+
+/* Selecto de ID: selecciona elementos por el nombre del atributo "id".
+    Modificaran solo un elemnto*/
+
+#spidermanNoWayHome {
+    font-size: 25px;
+    color: tomato;
+    text-decoration: underline;
+}
+
+#temporada3 {
+    color: seagreen;
+    font-size: 14px;
+}

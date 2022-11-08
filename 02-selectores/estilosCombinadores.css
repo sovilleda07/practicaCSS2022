@@ -1,0 +1,71 @@
+/* Selectores combinadores: combinan más de un selector básico */
+
+/* Combinador de descendientes: representado por un espacio en blanco.
+    Combina dos selectores, donde el primer selector debe de ser el ancestro del segundo selector.
+    El segundo elemento debe estar dentro del primero*/
+
+
+.listas .lista {
+   text-decoration: underline; 
+}
+
+.todo .lista {
+    list-style: decimal;
+}
+
+.dias .lista {
+    list-style: none;
+}
+
+/* Combinador de hijos directos: combina dos selectores, donde el primero debe ser padre directo o contenedor directo del segundo
+    >  */
+
+/* Modificará a todos los li que esten dentro de un contenedor con la clase listas */
+.listas > .lista{
+    list-style: upper-roman;
+    /* background-color: yellow; */
+}
+
+.dias > .lista {
+    color: orangered;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Combinador de hermano adyacente: combina dos selectores donde el segundo selector debe ser un hermano adyacente del primer selector.
+    Es decir, debe ser el siguiente hermano del primer selector.
+    Crear animaciones con pseudoclase, un comportamiento en el navegador (Reacción a un evento).
+    + */
+/* Seleccionará a cualquiera que sea el hermano adyacente del subtitulo */
+/* .subtitulo + * {
+    background-color: yellow;
+} */
+/* Seleccionará a cualquiera que sea el hermano adyacente del subtitulo que contenga la clase parrafo */
+.subtitulo +  .parrafo{
+    background-color: yellow;
+    /* display: none; */
+    /* opacity: 0; */
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.parrafo {
+    background: red;
+}
+
+/* Cada que subtitulo esté en la pseudoclase hover, su hermano adyacente con la clase parrafo tenga un display block*/
+.subtitulo:hover + .parrafo{
+    /* background-color: steelblue; */
+    /* display: block; */
+    opacity: 1;
+    height: 50px;
+}
+
+/* Combinador de hermanos generales: combina dos selectores, donde el segundo selector debe ser un hermano siguiente al primer selector
+    Seleccionará a los hermanos siguientes del punto de referencia que cumplan con la regla del selector. 
+    ~ */
+
+.subtitulo ~ .parrafo {
+    background-color: tomato;
+}

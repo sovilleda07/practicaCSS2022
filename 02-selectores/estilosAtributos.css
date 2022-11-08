@@ -1,0 +1,34 @@
+/* Selectores de atributos: []*/
+
+/* Seleccionar todos los elementos que tengan el atributo class */
+[value] {
+    /* background-color: yellow; */
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* Seleccionar elementos con atributo type de tipo texto */
+/* [type="text"] {
+    background-color: yellow;
+} */
+
+/* Seleccionar cualquier elemento que en el atributo value tenga la palabra cursocss 
+    Filtrar con ~ para que encuentre la coincidencia*/
+/* [value~="cursocss.com"] {
+    background-color: yellow;
+} */
+/* Filtrar con ^ para seleccionar el elemento que tenga como prejifo ese valor*/
+/* [value^="Aquí"] {
+    background-color: yellow;
+} */
+/* Filtrar con $ para seleccionar el elemento que tenga como sufijo ese valor */
+/* [value$="cursocss.com"] {
+    background-color: yellow;
+} */
+/* Filtrar con * para seleccionar el elemento que tenga ese valor, no importa el lugar*/
+[value*="cursocss.com"] {
+    background-color: yellow;
+}
+
+/* Pseudoelementos y Pseudoclases*/
