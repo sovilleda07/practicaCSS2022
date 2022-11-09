@@ -1,0 +1,79 @@
+/* Cascada, manera de determinar que selectores van a aplicar los estilos en caso de que haya más
+    de un selector que cambie a un mismo elemento y le de un distinto estilo.
+    Define que elementos predominará en caso de haber más de un selector que cambie los mismos estilos de un elemento. 
+    Se aplicaran los estilos de los últimos estilos declarados*/
+
+/* h1 {
+    color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: crimson;
+    font-family: cursive;
+}
+
+h1 {
+    color: seagreen; 
+} */
+
+/* Especificidad: define que estilos se aplicarán, tiene mayor importancia que la cascada.
+    Es el valor que se le da a los selectores.
+    Se pueden combinar*/
+/* .title {
+    color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* h1 {
+    color: crimson;
+    font-family: cursive;
+} */
+
+/* Todos los elementos h1 que tienen la clase title 
+    Tiene mayor especificidad porque le suma la del tipo y la de la clase
+    1 + 10 = 11 */
+/* h1.title{
+    color: crimson;
+    font-family: cursive;
+    background-color: black;
+} */
+
+/* Especificidad de 100 */
+/* No cambia el background color aunque sea mayor especificidad porque no hay un cambio en la propiedad */
+/* #title {
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+/* important rompe la especificidad, aplicando esa regla
+    Mala práctica por problemas a largo plazo */
+/* h1 {
+    color: crimson !important;
+} */
+
+/* Herencia: permite heredar ciertos estilos a los hijos de un contenedor */
+body {
+    border: 3px solid orange;
+    font-family: Arial, Helvetica, sans-serif;
+    color: steelblue;
+}
+
+/* Hereda el font family pero no el color */
+/* input {
+    font-size: 25px;
+} */
+
+/* Hereda el mismo borde del contenedor padre */
+.title {
+    border: inherit;
+}
+
+/* Heredar color y font del contenedor padre */
+input {
+    font-size: 25px;
+    color: inherit;
+    font-family: inherit;
+}
+
+
