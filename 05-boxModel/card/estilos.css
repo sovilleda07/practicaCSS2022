@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Existen dos tipos de cajas
+    1. Cajas en bloque: por defecto tienen un display: block. (h1 por defecto)
+        a. Genera un salto de línea porque toma el 100% de su contenedor.
+        b. Los elementos bloque pueden usar todas las propiedades del box model (width, height, padding, border y margin).
+    2. Cajas en línea: por defecto tienen un display: inline (abarca solo su contenido).
+        a. No hay saltos de línea porque se ponen uno al lado del otro, sólo un espacio se crea porque se toma como texto .
+        b. Sólo ocupan el espacio de su contenido y no se le pueden aplicar propiedades del box model*.
+    2.1 Cajas en línea bloque: híbrido de inline que permite que los elementos sean en línea, pero que se puedan usar todas las características del box model.
+    */
+
+/* .title {
+    background-color: yellow;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: tomato;
+    color: white;
+    padding-top: 80px;
+} */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .title {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 40px;
+} */
+
+/* Imagenes con comportamiento similar a display:inline-block */
+/* Display:block para evitar el espacio que se crea de manera vertical */
+.card {
+    background-color: #15273F;
+    color: white;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.card__img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.card__title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.card__paragraph {
+    color: #99B0d4;
+}  
+
+.card__cta {
+    display: block;
+    background-color: white;
+    color: #15273F;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 15px 0;
+    font-weight: bold;
+    border-radius: 5px;
+}
