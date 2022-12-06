@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo:
+    1. background-color: permite agregar un color de fondo 
+    2. background-image: permite agregar imágenes de fondo
+        2.1 background-repeat: cuando la imagen es más pequeña que el elemento.
+        2.2 background-position: ubicar la imagen en top-left-right-bottom-center.
+        2.3 background-size: darle un tamaño a la imagen.
+        2.4 linear-gradient: degradados
+*/
+.container {
+    margin: 50px auto;
+    /* padding: 70px; */
+    width: 90%;
+    height: 500px;
+    /* background: ; */
+    background-color: #723cd6;
+    background-image: url("./img/spiderman.png");
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center; /* Centrar */
+    background-size: contain; /* Contener en el elemento */
+}
+
+/* Colocar una imagen con gradient */
+.container2 {
+    margin: 50px auto;
+    width: 90%;
+    height: 500px;
+    background-image: linear-gradient(#d62eceaf, #283198a8), url("./img/imagen.jpg");
+    background-size: cover; 
+    background-position: center;
+    /* color: #fff;
+    text-align: center;
+    padding: 200px; */
+}
+
+
+/* Color: indica el color que tendrán los textos.
+    1. Palabras claves: green, red, purple, black.
+    2. RGB: valor tipo función, definir con base a 3 colores primarios y el valor de transparencia.
+    3. Hexadecimal: 6 valores, mínimo 3
+    4. HSL: 3 parámetros: tono o matíz (0-360), saturación (0-100%), luminosidad (0-100%)
+     */
+.title {
+    font-size: 42px;
+    /* color: tomato; */
+    /* color: rgb(214, 73, 127); */
+    /* color: #00f; */
+    /* color: hsl(210, 100%, 50%, .8)*/
+
+}
